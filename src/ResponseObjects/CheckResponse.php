@@ -55,7 +55,7 @@ class CheckResponse extends AbuseResponse
         $this->isWhitelisted = $data->isWhitelisted ?? null;
         $this->abuseConfidenceScore = $data->abuseConfidenceScore;
         $this->countryCode = $data->countryCode ?? null;
-        $this->usageType = $data->usageType;
+        $this->usageType = $data->usageType ?? "Unknown Usage Type";
         $this->isp = $data->isp;
         $this->domain = $data->domain ?? null;
         $this->hostnames = $data->hostnames;
